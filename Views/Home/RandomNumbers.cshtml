@@ -1,0 +1,251 @@
+﻿
+@{
+    ViewData["Title"] = "RandomNumbers";
+}
+
+<h1>RandomNumbers</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        Abdullah
+        <p id="ab"></p><br />
+        <p id="abd"></p>
+    </div>
+    <div class="col-md-6">
+        Musa
+        <p id="mu"></p><br />
+        <p id="mus"></p>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script>
+    $(document).ready(function () {
+        debugger;
+
+        var count = 0;
+        var cnt = 0;
+        
+        var interval = null;
+        interval = setInterval(updateDiv, 1000);
+
+        var result;
+        var rest
+        var res
+        var sum
+
+        var resul;
+        var ret
+        var rs
+        var sm
+
+        function updateDiv() {
+            
+            do {
+                debugger;
+
+                if (count <= 0) {
+                    result = Math.floor((Math.random() * 10) + 1);
+                   /* re = result;*/
+                    $("#ab").text(result);
+                }
+              
+
+                
+                if (count == 1) {
+                    rest = result;
+                    
+                     res = Math.floor((Math.random() * 10) + 1);
+                     sum = rest + res;
+                    $("#ab").text(sum);
+                }
+
+                if (count == 2) {
+                    rest = sum;
+
+                    res = Math.floor((Math.random() * 10) + 1);
+                    sum = rest + res;
+                    $("#ab").text(sum);
+                }
+
+                if (count == 3) {
+                    rest = sum;
+
+                    res = Math.floor((Math.random() * 10) + 1);
+                    sum = rest + res;
+                    $("#ab").text(sum);
+                }
+                if (count == 4) {
+                    rest = sum;
+
+                    res = Math.floor((Math.random() * 10) + 1);
+                    sum = rest + res;
+                    $("#ab").text(sum);
+                }
+                if (count == 5) {
+                    rest = sum;
+
+                    res = Math.floor((Math.random() * 10) + 1);
+                    sum = rest + res;
+                    $("#ab").text(sum);
+                }
+                if (count == 6) {
+                    rest = sum;
+
+                    res = Math.floor((Math.random() * 10) + 1);
+                    sum = rest + res;
+                    $("#ab").text(sum);
+                }
+                if (count == 7) {
+                    rest = sum;
+
+                    res = Math.floor((Math.random() * 10) + 1);
+                    sum = rest + res;
+                    $("#ab").text(sum);
+                }
+                if (count == 8) {
+                    rest = sum;
+
+                    res = Math.floor((Math.random() * 10) + 1);
+                    sum = rest + res;
+                    $("#ab").text(sum);
+                }
+                if (count ==9) {
+                    rest = sum;
+
+                    res = Math.floor((Math.random() * 10) + 1);
+                    sum = rest + res;
+                    $("#ab").text(sum);
+                }
+                if (count == 10) {
+                    rest = sum;
+
+                    res = Math.floor((Math.random() * 10) + 1);
+                    sum = rest + res;
+                    $("#ab").text(sum);
+                }
+                debugger;
+                if (sum >= 50) {
+                    $("#ab").append(" First Approch 50");
+                    $("#mu").append("Sorry");
+                    clearInterval(interval);
+                    break;
+                }
+                count++;
+           
+                
+         
+
+                
+
+
+
+
+
+
+
+                ////Musaa
+
+
+                if (cnt <= 0) {
+                    resul = Math.floor((Math.random() * 10) + 1);
+                    /* re = result;*/
+                    $("#mu").text(resul);
+                }
+
+
+
+                if (cnt == 1) {
+                    ret = resul;
+
+                    rs = Math.floor((Math.random() * 10) + 1);
+                    sm = ret + rs;
+                    $("#mu").text(sm);
+                }
+
+                if (cnt == 2) {
+                    ret = sm;
+
+                    rs = Math.floor((Math.random() * 10) + 1);
+                    sm = ret + rs;
+                    $("#mu").text(sm);
+                }
+
+                if (cnt == 3) {
+                    ret = sm;
+
+                    rs = Math.floor((Math.random() * 10) + 1);
+                    sm = ret + rs;
+                    $("#mu").text(sm);
+                }
+                if (cnt == 4) {
+                    ret = sm;
+
+                    rs = Math.floor((Math.random() * 10) + 1);
+                    sm = ret + rs;
+                    $("#mu").text(sm);
+                }
+                if (cnt == 5) {
+                    ret = sm;
+
+                    rs = Math.floor((Math.random() * 10) + 1);
+                    sm = ret + rs;
+                    $("#mu").text(sm);
+                }
+                if (cnt == 6) {
+                    ret = sm;
+
+                    rs = Math.floor((Math.random() * 10) + 1);
+                    sm = ret + rs;
+                    $("#mu").text(sm);
+                }
+                if (cnt == 7) {
+                    ret = sm;
+
+                    rs = Math.floor((Math.random() * 10) + 1);
+                    sm = ret + rs;
+                    $("#mu").text(sm);
+                }
+                if (cnt == 8) {
+                    ret = sm;
+
+                    rs = Math.floor((Math.random() * 10) + 1);
+                    sm = ret + rs;
+                    $("#mu").text(sm);
+                }
+                if (cnt == 9) {
+                    ret = sm;
+
+                    rs = Math.floor((Math.random() * 10) + 1);
+                    sm = ret + rs;
+                    $("#mu").text(sm);
+                } if (cnt == 10) {
+                    ret = sm;
+
+                    rs = Math.floor((Math.random() * 10) + 1);
+                    sm = ret + rs;
+                    $("#mu").text(sm);
+                }
+                debugger;
+                if (sm >= 50) {
+                    $("#mu").append(" First Approch 50");
+                    $("#ab").append("Sorry");
+                    clearInterval(interval);
+                    break;
+                }
+
+                cnt++;
+              
+
+
+
+
+                
+            } while (result == 50||sm==50);
+
+
+        }
+        
+
+    });
+</script>
